@@ -13,13 +13,14 @@ ul {
 a {
 	font-size: 18px;
 	color:#E5E7EB;
+	text-decoration: none;
 }
 
 .header, 
 .body-info, 
 .body-quote,
 .footer {
-	padding: 0 10em;
+	padding: 0 12em;
 }
 
 .header {
@@ -32,22 +33,25 @@ a {
 	align-items: center;
 }
 
-.header-content {
-	display: flex;
-	justify-content: space-between;
-
-}
-
-.header-photo {
-	display: flex;
-
-}
-
 .header-links {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 16px;
 }
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	flex: 1 1 auto;
+}
+
+.header-photo {
+	display: flex;
+	background-color: #E5E7EB;
+}
+
+
 
 .logo {
 	font-size: 24px;
@@ -66,17 +70,25 @@ a {
 }
 
 .body-info {
-	font-size: 36px;
-	font-weight: 900;
-	color: #1F2937;
 	text-align: center;
 	padding: 32px;
 }
+
+.body-header {
+	font-size: 36px;
+	font-weight: 900;
+	color: #1F2937;
+}
+
+.body-cards {
+	display: flex;
+}
+
 .footer {
 	background-color: #1F2937;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 72px;
+	height: 96px;
 	color: #F9FAF8;
 }
