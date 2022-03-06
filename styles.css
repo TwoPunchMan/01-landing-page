@@ -12,19 +12,43 @@ ul {
 
 a {
 	font-size: 18px;
-	color:#E5E7EB;
 	text-decoration: none;
 }
 
 .header, 
 .body-info, 
 .body-quote,
+.body-action,
 .footer {
 	padding: 0 12em;
 }
 
-.header {
+/* Colors and Font styles */
+.header,
+.footer {
 	background-color: #1F2937;
+}
+
+.body-header,
+.quote-text {
+	color: #1F2937;
+}
+
+.logo,
+.hero,
+.footer {
+	color: #F9FAF8;
+}
+
+.header-photo,
+.body-quote {
+	background-color: #E5E7EB;
+}
+
+a,
+.hero-secondary
+ {
+	color: #E5E7EB;
 }
 
 .header-top {
@@ -47,35 +71,27 @@ a {
 	padding: 108px 0;
 }
 
-.header-photo {
-	background-color: #E5E7EB;
-}
-
 .logo {
 	font-size: 24px;
-	color: #F9FAF8;
 }
 
 .hero {
 	font-size: 48px;
 	font-weight: 900;
-	color: #F9FAF8;
 }
 
 .hero-secondary {
 	font-size: 18px;
-	color: #E5E7EB;
 }
 
 .body-info {
 	text-align: center;
-	padding: 32px;
+	margin: 48px 0 108px 0;
 }
 
 .body-header {
 	font-size: 36px;
 	font-weight: 900;
-	color: #1F2937;
 	padding: 16px;
 }
 
@@ -92,7 +108,9 @@ a {
 	width: 150px;
 }
 
-.card-image {
+img {
+	width: 150px;
+	height: 150px;
 	border: 4px solid #3882F6;
 	border-radius: 16px;
 	margin-bottom: 8px;
@@ -100,7 +118,6 @@ a {
 
 /* Quote section */
 .body-quote {
-	background-color: #E5E7EB;
 	padding: 128px 360px;
 	margin: 0;
 }
@@ -109,8 +126,6 @@ a {
 	font-size: 36px;
 	font-style: italic;
 	font-weight: lighter;
-	color: #1F2937;
-
 }
 
 .quote-by {
@@ -120,12 +135,24 @@ a {
 	padding-right: 84px;
 }
 
+.body-action {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #3882F6;
+	margin: 108px;
+	padding: 64px;
+	border-radius: 16px;
+}
+
+.action-text {
+	margin: 0;
+	padding: 0;
+}
 /* Footer section */
 .footer {
-	background-color: #1F2937;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 96px;
-	color: #F9FAF8;
 }
