@@ -34,6 +34,7 @@ a {
 }
 
 .logo,
+.header-btn,
 .hero,
 .action-text,
 .action-btn,
@@ -51,7 +52,8 @@ a,
 	color: #E5E7EB;
 }
 
-.action {
+.action,
+.header-btn {
 	background-color: #3882F6;
 }
 
@@ -60,8 +62,14 @@ a,
 	border-color:#E5E7EB;
 }
 
+
 img {
 	border-color: #3882F6;
+}
+
+.header-btn,
+.action-btn {
+	font-size: 16px;
 }
 
 a,
@@ -70,7 +78,8 @@ a,
 }
 
 .logo,
-.quote-by {
+.quote-by,
+.action-bold {
 	font-size: 24px;
 }
 
@@ -79,7 +88,13 @@ a,
 	font-size: 36px;
 }
 
-
+.logo,
+.header-btn,
+.quote-by,
+.action-bold,
+.action-btn {
+	font-weight: bold;
+}
 
 /* Header section */
 
@@ -87,6 +102,7 @@ a,
 	justify-content: space-between;
 	align-items: center;
 	display: flex;
+	padding-top: 16px;
 }
 
 .header-links {
@@ -99,14 +115,34 @@ a,
 .header-content {
 	display: flex;
 	justify-content: space-between;
-	flex: 1 1 0%;
-	padding: 108px 0;
+	padding: 108px 0 144px 0;
+}
+
+.header-text {
+	margin-right: 48px;
 }
 
 .hero {
 	font-size: 48px;
 	font-weight: 900;
 }
+
+.hero-secondary {
+	margin: 16px 0;
+}
+
+.header-btn {
+	border: none;
+	border-radius: 8px;
+	padding: 8px 32px;
+}
+
+.header-photo {
+	height: 218px;
+	width: 640px;
+}
+
+/* Body info section */
 
 .body-info {
 	text-align: center;
@@ -131,12 +167,13 @@ a,
 	width: 150px;
 }
 
-img {
+.card-photo {
 	width: 150px;
 	height: 150px;
 	border-style: solid;
 	border-width: 4px;
 	border-radius: 16px;
+	margin-bottom: 8px;
 }
 
 /* Quote section */
@@ -152,7 +189,6 @@ img {
 
 .quote-by {
 	text-align: right;
-	font-weight: bold;
 	padding-right: 84px;
 }
 
@@ -174,19 +210,12 @@ img {
 	padding: 0 84px;
 }
 
-.action-bold {
-	font-weight: bold;
-	font-size: 24px;
-}
-
 .action-btn {
 	border-style: solid;
 	border-width: 2px;
 	border-radius: 8px;
 	padding: 8px 32px;
 	margin-right: 256px;
-	font-weight: bold;
-	font-size: 16px;
 	justify-content:left;
 }
 
